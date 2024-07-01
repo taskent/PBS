@@ -1,5 +1,5 @@
 # PBS
-1. Estimates pairwise Fst values among 1000G East Asian, Eurasian, and African populations  
+1. Estimates pairwise Fst values among 1000G East Asian, Eurasian, and African populations with:    
 sbatch slurm-vcftools-fst
 
 2. Download human refseq genes   
