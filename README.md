@@ -1,8 +1,8 @@
 # PBS
-Estimates pairwise Fst values among 1000G East Asian, Eurasian, and African populations  
+1. Estimates pairwise Fst values among 1000G East Asian, Eurasian, and African populations  
 sbatch slurm-vcftools-fst
 
-Download human refseq genes   
+2. Download human refseq genes   
 (1) go to http://hgdownload.soe.ucsc.edu/downloads.html  
 (2) choose human genomes  
 (3) choose 'Genome sequence files and select annotations (2bit, GTF, GC-content, etc)' under 'Feb. 2009 (GRCh37/hg19)' + go down to the end   
@@ -19,9 +19,9 @@ Download human refseq genes
 
 ############    
     alternatively one can intersect both PBS.bed and hg19.ncbiRefSeq.gtf files     
-	 1. sort PBS.bed file sort -k1,1 -k2,2n PBS.bed > PBS_sorted.bed    
-	 2. bedtools intersect -a PBS_sorted.bed -b hg19.ncbiRefSeq.gtf -loj > PBS_sorted_intersect_genes.bed    
+	 (1) sort PBS.bed file sort -k1,1 -k2,2n PBS.bed > PBS_sorted.bed    
+	 (2) bedtools intersect -a PBS_sorted.bed -b hg19.ncbiRefSeq.gtf -loj > PBS_sorted_intersect_genes.bed    
 ############    
 
-Estimate and print PBS values   
+3. Estimate and print PBS values   
 R pbs_rstudio.R   
