@@ -7,11 +7,10 @@ sbatch slurm-vcftools-fst
 (2) choose human genomes  
 (3) choose 'Genome sequence files and select annotations (2bit, GTF, GC-content, etc)' under 'Feb. 2009 (GRCh37/hg19)' + go down to the end   
 (4) choose 'genes/'   
-(5) double click 'hg19.ncbiRefSeq.gtf.gz' + copy link address   
+(5) double click 'hg19.ncbiRefSeq.gtf.gz' + copy link address ('https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/genes/hg19.ncbiRefSeq.gtf.gz')   
 (6) choose after 'https:'   
 (7) download with the following code on server:   
-	rsync -a -P rsync:remote_path_to_file ./    
-	'https://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/genes/hg19.ncbiRefSeq.gtf.gz'
+	rsync -a -P rsync:remote_path_to_file ./       
 (8) unzip the file w/script    
 	gunzip hg19.ncbiRefSeq.gtf.gz   
 (9) find the boundaries of EDAR gene transcript on chr2 and save it to use in the figure   
