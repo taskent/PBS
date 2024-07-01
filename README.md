@@ -18,7 +18,7 @@ sbatch slurm-vcftools-fst
 	grep -w 'EDAR' hg19.ncbiRefSeq.gtf  
 
 ############    
-    alternatively one can intersect both PBS.bed and hg19.ncbiRefSeq.gtf files     
+    alternatively one can intersect PBS.bed and hg19.ncbiRefSeq.gtf files     
 	 (1) sort PBS.bed file sort -k1,1 -k2,2n PBS.bed > PBS_sorted.bed    
 	 (2) bedtools intersect -a PBS_sorted.bed -b hg19.ncbiRefSeq.gtf -loj > PBS_sorted_intersect_genes.bed    
 ############    
