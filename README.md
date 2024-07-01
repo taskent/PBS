@@ -2,9 +2,9 @@
 -estimates pairwise Fst values among 1000G East Asian, Eurasian, and African populations
 sbatch slurm-vcftools-fst
 
--download human refseq genes 
-(1) go to http://hgdownload.soe.ucsc.edu/downloads.html
-(2) choose human genomes
+-download human refseq genes   
+(1) go to http://hgdownload.soe.ucsc.edu/downloads.html  
+(2) choose human genomes  
 (3) choose 'Genome sequence files and select annotations (2bit, GTF, GC-content, etc)' under 'Feb. 2009 (GRCh37/hg19)' + go down to the end
 (4) choose 'genes/'
 (5) double click 'hg19.ncbiRefSeq.gtf.gz' + copy link address
